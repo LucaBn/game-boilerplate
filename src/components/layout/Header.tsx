@@ -12,6 +12,8 @@ import { useNavigate } from "react-router-dom";
 import { ThemeList } from "@/constants/themes";
 import { LanguageList } from "@/typings/i18next";
 
+import styles from "./Header.module.scss";
+
 export function Header() {
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();
   const { i18n, t } = useTranslation("common");
@@ -30,18 +32,13 @@ export function Header() {
 
   return (
     <Paper
+      component="header"
       px="md"
       py="sm"
       withBorder
-      style={{
-        position: "fixed",
-        top: 0,
-        left: 0,
-        right: 0,
-        zIndex: 1000,
-      }}
+      className={styles.header}
     >
-      <Group style={{ justifyContent: "space-between", alignItems: "center" }}>
+      <Group component="nav" className={styles.headerNav}>
         <Title order={3}>{t("header.title")}</Title>
 
         <Group>
@@ -62,7 +59,7 @@ export function Header() {
             ]}
             variant="filled"
             size="sm"
-            style={{ minWidth: 100 }}
+            className={styles.languageSelect}
           />
         </Group>
       </Group>

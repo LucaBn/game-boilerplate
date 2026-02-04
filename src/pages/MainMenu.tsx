@@ -4,17 +4,19 @@ import { useNavigate, useParams } from "react-router-dom";
 import { APP_NAME } from "@/constants/app";
 import { useGame } from "@/hooks/useGame";
 
+import styles from "./MainMenu.module.scss";
+
 export function MainMenu() {
   const { hasAnySave, startNewGame, continueLastGame } = useGame();
   const { language } = useParams();
   const navigate = useNavigate();
 
   return (
-    <Container size="xs" style={{ height: "100dvh" }}>
+    <Container fluid>
       <Stack
         justify="center"
         align="center"
-        style={{ height: "100%" }}
+        className={styles.mainMenu}
         gap="md"
       >
         <Title order={1} ta="center">

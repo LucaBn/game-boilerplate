@@ -8,4 +8,10 @@ body {
   -webkit-overflow-scrolling: touch;
   word-break: break-word;
   text-rendering: optimizeSpeed;
+  height: 100dvh;
+  overflow-y: auto;
+}
+
+#root {
+  height: 100%;
 }
