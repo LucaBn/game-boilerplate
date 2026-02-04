@@ -2,8 +2,8 @@ import { Navigate, Route, Routes } from "react-router-dom";
 
 import { MainMenu } from "@/pages/MainMenu";
 
-import { AppLayout } from "./layouts/AppLayout";
-import { GameLayout } from "./layouts/GameLayout";
+import { AppLayout } from "./layouts/App/AppLayout";
+import { GameLayout } from "./layouts/Game/GameLayout";
 import { LanguageLayout } from "./layouts/LanguageLayout";
 import { RootRedirect } from "./RootRedirect";
 import { RouteGuard } from "./routing/RouteGuard";

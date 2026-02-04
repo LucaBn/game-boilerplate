@@ -1,7 +1,7 @@
 import { Container } from "@mantine/core";
 import { Outlet } from "react-router-dom";
 
-import { Header } from "@/components/layout/Header";
+import { Header } from "@/layouts/App/Header";
 
 import styles from "./AppLayout.module.scss";
 

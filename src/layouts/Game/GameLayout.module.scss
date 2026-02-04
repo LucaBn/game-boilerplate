@@ -1,0 +1,8 @@
+.gameContainer {
+  display: flex;
+  width: calc(100% + var(--mantine-spacing-md) * 2);
+  max-height: 100%;
+  margin-left: calc(-1 * var(--mantine-spacing-md));
+  margin-right: calc(-1 * var(--mantine-spacing-md));
+  align-items: stretch;
+}
