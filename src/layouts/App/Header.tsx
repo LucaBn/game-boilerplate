@@ -14,7 +14,7 @@ import { LanguageList } from "@/typings/i18next";
 
 import styles from "./Header.module.scss";
 
-export function Header() {
+export const Header: React.FC = () => {
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();
   const { i18n, t } = useTranslation("common");
   const navigate = useNavigate();
@@ -65,4 +65,4 @@ export function Header() {
       </Group>
     </Paper>
   );
-}
+};

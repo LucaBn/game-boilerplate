@@ -9,11 +9,11 @@ interface Props {
   children: ReactNode;
 }
 
-export function RouteGuard({
+export const RouteGuard = ({
   requireGameStarted,
   requireAnySave,
   children,
-}: Props) {
+}: Props) => {
   const { gameStarted, hasAnySave } = useGame();
   const { language } = useParams();
 
@@ -26,4 +26,4 @@ export function RouteGuard({
   }
 
   return <>{children}</>;
-}
+};

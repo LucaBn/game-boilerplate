@@ -3,9 +3,9 @@ import { Navigate } from "react-router-dom";
 
 import { DEFAULT_LANGUAGE } from "@/constants/languages";
 
-export function RootRedirect() {
+export const RootRedirect: React.FC = () => {
   const { i18n } = useTranslation();
 
   const language = i18n.language || DEFAULT_LANGUAGE;
   return <Navigate to={`/${language}`} replace />;
-}
+};

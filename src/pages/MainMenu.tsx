@@ -6,7 +6,7 @@ import { useGame } from "@/hooks/useGame";
 
 import styles from "./MainMenu.module.scss";
 
-export function MainMenu() {
+export const MainMenu: React.FC = () => {
   const { hasAnySave, startNewGame, continueLastGame } = useGame();
   const { language } = useParams();
   const navigate = useNavigate();
@@ -66,4 +66,4 @@ export function MainMenu() {
       </Stack>
     </Container>
   );
-}
+};

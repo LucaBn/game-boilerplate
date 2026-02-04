@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 import styles from "./Sidebar.module.scss";
 
-export function Sidebar() {
+export const Sidebar: React.FC = () => {
   return (
     <Box component="aside" className={styles.sidebar} p="md">
       <Stack gap="sm">
@@ -13,4 +13,4 @@ export function Sidebar() {
       </Stack>
     </Box>
   );
-}
+};

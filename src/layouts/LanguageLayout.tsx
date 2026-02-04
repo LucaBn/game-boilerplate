@@ -5,7 +5,7 @@ import { Navigate, Outlet, useParams } from "react-router-dom";
 import { DEFAULT_LANGUAGE } from "@/constants/languages";
 import { LanguageList } from "@/typings/i18next";
 
-export function LanguageLayout() {
+export const LanguageLayout: React.FC = () => {
   const { language } = useParams<{ language: string }>();
   const { i18n } = useTranslation();
 
@@ -24,4 +24,4 @@ export function LanguageLayout() {
   }
 
   return <Outlet />;
-}
+};

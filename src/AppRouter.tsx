@@ -8,7 +8,7 @@ import { LanguageLayout } from "./layouts/LanguageLayout";
 import { RootRedirect } from "./RootRedirect";
 import { RouteGuard } from "./routing/RouteGuard";
 
-export function AppRouter() {
+export const AppRouter: React.FC = () => {
   return (
     <Routes>
       <Route path="/" element={<RootRedirect />} />
@@ -47,4 +47,4 @@ export function AppRouter() {
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );
-}
+};

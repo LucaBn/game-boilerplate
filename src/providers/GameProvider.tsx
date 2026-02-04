@@ -1,10 +1,13 @@
-import { useEffect, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 
 import { GameContext } from "@/context/GameContext";
 
 import { LAST_SAVE_KEY, SAVES_KEY } from "../constants/game";
+interface GameProviderProps {
+  children: ReactNode;
+}
 
-export function GameProvider({ children }: { children: React.ReactNode }) {
+export const GameProvider: React.FC<GameProviderProps> = ({ children }) => {
   const [activeSaveId, setActiveSaveId] = useState<string | null>(null);
   const [hasAnySave, setHasAnySave] = useState(false);
 
@@ -49,4 +52,4 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
       {children}
     </GameContext.Provider>
   );
-}
+};
