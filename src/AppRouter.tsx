@@ -4,7 +4,7 @@ import { MainMenu } from "@/pages/MainMenu";
 
 import { AppLayout } from "./layouts/App/AppLayout";
 import { GameLayout } from "./layouts/Game/GameLayout";
-import { LanguageLayout } from "./layouts/LanguageLayout";
+import { LanguageLayout } from "./layouts/Language/LanguageLayout";
 import { RootRedirect } from "./RootRedirect";
 import { RouteGuard } from "./routing/RouteGuard";
 
