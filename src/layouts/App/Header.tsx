@@ -44,21 +44,24 @@ export const Header = () => {
           <Button
             variant="light"
             onClick={toggleColorScheme}
-            aria-label={t("header.button.toggleColorTheme")}
+            aria-label={t("general.toggleColorTheme")}
           >
-            {isDark ? "🌙 Dark" : "🌞 Light"}
+            {isDark
+              ? `🌙 ${t("general.theme.dark")}`
+              : `🌞 ${t("general.theme.light")}`}
           </Button>
 
           <Select
             value={currentLang}
             onChange={handleLanguageChange}
             data={[
-              { value: LanguageList.En, label: "English" },
-              { value: LanguageList.It, label: "Italiano" },
+              { value: LanguageList.En, label: t("general.language.en") },
+              { value: LanguageList.It, label: t("general.language.it") },
             ]}
             variant="filled"
             size="sm"
             className={styles.languageSelect}
+            aria-label={t("general.toggleLanguage")}
           />
         </Group>
       </Group>

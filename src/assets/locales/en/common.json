@@ -1,4 +1,21 @@
 {
-  "header.button.toggleColorTheme": "Toggle theme color",
-  "header.button.toggleLanguage": "Toggle language"
+  "general": {
+    "toggleColorTheme": "Toggle theme color",
+    "toggleLanguage": "Toggle language",
+    "language": {
+      "en": "English",
+      "it": "Italiano"
+    },
+    "theme": {
+      "light": "Light",
+      "dark": "Dark"
+    }
+  },
+  "mainMenu": {
+    "newGame": "New game",
+    "continue": "Continue last game",
+    "loadGame": "Load game",
+    "options": "Options",
+    "credits": "Credits"
+  }
 }

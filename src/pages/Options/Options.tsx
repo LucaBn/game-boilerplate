@@ -1,5 +1,7 @@
+import { useTranslation } from "react-i18next";
 // import styles from "./Options.module.scss";
 
 export const Options = () => {
-  return <p>Options Page</p>;
+  const { t } = useTranslation("common");
+  return <p>{t("mainMenu.options")}</p>;
 };

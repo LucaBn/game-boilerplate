@@ -1,5 +1,7 @@
+import { useTranslation } from "react-i18next";
 // import styles from "./LoadGame.module.scss";
 
 export const LoadGame = () => {
-  return <p>Load Game Page</p>;
+  const { t } = useTranslation("common");
+  return <p>{t("mainMenu.loadGame")}</p>;
 };

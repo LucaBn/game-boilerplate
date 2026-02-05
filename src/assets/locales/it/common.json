@@ -1,4 +1,21 @@
 {
-  "header.button.toggleColorTheme": "Cambia tema",
-  "header.button.toggleLanguage": "Cambia lingua"
+  "general": {
+    "toggleColorTheme": "Cambia tema",
+    "toggleLanguage": "Cambia lingua",
+    "language": {
+      "en": "English",
+      "it": "Italiano"
+    },
+    "theme": {
+      "light": "Chiaro",
+      "dark": "Scuro"
+    }
+  },
+  "mainMenu": {
+    "newGame": "Nuova partita",
+    "continue": "Riprendi l'ultima partita",
+    "loadGame": "Carica partita",
+    "options": "Opzioni",
+    "credits": "Credits"
+  }
 }

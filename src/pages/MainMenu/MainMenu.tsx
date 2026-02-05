@@ -1,4 +1,5 @@
 import { Button, Container, Stack, Title } from "@mantine/core";
+import { useTranslation } from "react-i18next";
 import { useNavigate, useParams } from "react-router-dom";
 
 import { APP_NAME } from "@/constants/app";
@@ -10,6 +11,7 @@ export const MainMenu = () => {
   const { hasAnySave, startNewGame, continueLastGame } = useGame();
   const { language } = useParams();
   const navigate = useNavigate();
+  const { t } = useTranslation("common");
 
   return (
     <Container fluid>
@@ -33,14 +35,14 @@ export const MainMenu = () => {
                   navigate(`/${language}/game`);
                 }}
               >
-                Continue last game
+                {t("mainMenu.continue")}
               </Button>
 
               <Button
                 fullWidth
                 onClick={() => navigate(`/${language}/load-game`)}
               >
-                Load game
+                {t("mainMenu.loadGame")}
               </Button>
             </>
           )}
@@ -52,15 +54,15 @@ export const MainMenu = () => {
               navigate(`/${language}/game`);
             }}
           >
-            New game
+            {t("mainMenu.newGame")}
           </Button>
 
           <Button fullWidth onClick={() => navigate(`/${language}/options`)}>
-            Options
+            {t("mainMenu.options")}
           </Button>
 
           <Button fullWidth onClick={() => navigate(`/${language}/credits`)}>
-            Credits
+            {t("mainMenu.credits")}
           </Button>
         </Stack>
       </Stack>
