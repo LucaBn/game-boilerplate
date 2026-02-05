@@ -1,6 +1,6 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 
-import { MainMenu } from "@/pages/MainMenu";
+import { MainMenu } from "@/pages/MainMenu/MainMenu";
 
 import { AppLayout } from "./layouts/App/AppLayout";
 import { GameLayout } from "./layouts/Game/GameLayout";
