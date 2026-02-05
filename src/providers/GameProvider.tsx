@@ -12,8 +12,8 @@ interface GameProviderProps {
 }
 
 export function GameProvider({ children }: GameProviderProps) {
-  const [activeSaveId, setActiveSaveId] = useState<string | null>(null);
-  const [hasAnySave, setHasAnySave] = useState(false);
+  const [activeSaveId, setActiveSaveId] = useState<string>("");
+  const [hasAnySave, setHasAnySave] = useState<boolean>(false);
 
   useEffect(() => {
     setHasAnySave(hasAnySaveStorage());
@@ -37,7 +37,7 @@ export function GameProvider({ children }: GameProviderProps) {
       value={{
         hasAnySave,
         activeSaveId,
-        gameStarted: activeSaveId !== null,
+        gameStarted: !!activeSaveId,
         startNewGame,
         continueLastGame,
       }}

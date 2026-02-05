@@ -1,6 +1,6 @@
 import { APP_NAME_SHORT } from "@/constants/app";
 
-const lowercaseAppName = APP_NAME_SHORT.toLowerCase();
+const lowercaseAppName: string = APP_NAME_SHORT.toLowerCase();
 
 export const LS_KEY_LIST = {
   SAVES: `${lowercaseAppName}:saves`,

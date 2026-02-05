@@ -3,7 +3,7 @@ import { createContext } from "react";
 interface GameState {
   hasAnySave: boolean;
   gameStarted: boolean;
-  activeSaveId: string | null;
+  activeSaveId: string;
   startNewGame: () => void;
   continueLastGame: () => void;
 }
