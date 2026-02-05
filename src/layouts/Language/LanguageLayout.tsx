@@ -5,7 +5,7 @@ import { Navigate, Outlet, useParams } from "react-router-dom";
 import { DEFAULT_LANGUAGE } from "@/constants/languages";
 import { LanguageList } from "@/typings/i18next";
 
-export const LanguageLayout: React.FC = () => {
+export const LanguageLayout = () => {
   const { language } = useParams<{ language: string }>();
   const { i18n } = useTranslation();
 

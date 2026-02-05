@@ -5,7 +5,7 @@ import { Sidebar } from "@/layouts/Game";
 
 import styles from "./GameLayout.module.scss";
 
-export const GameLayout: React.FC = () => {
+export const GameLayout = () => {
   return (
     <AppShell className={styles.gameContainer}>
       <Sidebar />

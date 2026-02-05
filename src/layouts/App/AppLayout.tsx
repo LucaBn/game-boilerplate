@@ -5,7 +5,7 @@ import { Header } from "@/layouts/App";
 
 import styles from "./AppLayout.module.scss";
 
-export const AppLayout: React.FC = () => {
+export const AppLayout = () => {
   return (
     <AppShell>
       <Header />

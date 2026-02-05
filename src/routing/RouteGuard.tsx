@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 import { Navigate, useParams } from "react-router-dom";
 
-import { useGame } from "@/hooks";
+import { useGame } from "@/hooks/useGame";
 
 interface Props {
   requireGameStarted?: boolean;

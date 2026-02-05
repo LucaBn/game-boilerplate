@@ -7,7 +7,7 @@ import { MainMenu } from "@/pages/MainMenu";
 import { RootRedirect } from "@/routing";
 import { RouteGuard } from "@/routing";
 
-export const AppRouter: React.FC = () => {
+export const AppRouter = () => {
   return (
     <Routes>
       <Route path="/" element={<RootRedirect />} />

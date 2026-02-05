@@ -14,7 +14,7 @@ import { LanguageList } from "@/typings/i18next";
 
 import styles from "./Header.module.scss";
 
-export const Header: React.FC = () => {
+export const Header = () => {
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();
   const { i18n, t } = useTranslation("common");
   const navigate = useNavigate();

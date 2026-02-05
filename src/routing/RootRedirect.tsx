@@ -3,7 +3,7 @@ import { Navigate } from "react-router-dom";
 
 import { DEFAULT_LANGUAGE } from "@/constants/languages";
 
-export const RootRedirect: React.FC = () => {
+export const RootRedirect = () => {
   const { i18n } = useTranslation();
 
   const language = i18n.language || DEFAULT_LANGUAGE;
