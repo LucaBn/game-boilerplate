@@ -1,6 +1,6 @@
 import { createContext } from "react";
 
-export interface GameState {
+interface GameState {
   hasAnySave: boolean;
   gameStarted: boolean;
   activeSaveId: string | null;

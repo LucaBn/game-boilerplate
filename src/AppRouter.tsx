@@ -1,12 +1,11 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 
-import { MainMenu } from "@/pages/MainMenu/MainMenu";
-
-import { AppLayout } from "./layouts/App/AppLayout";
-import { GameLayout } from "./layouts/Game/GameLayout";
-import { LanguageLayout } from "./layouts/Language/LanguageLayout";
-import { RootRedirect } from "./RootRedirect";
-import { RouteGuard } from "./routing/RouteGuard";
+import { AppLayout } from "@/layouts/App";
+import { GameLayout } from "@/layouts/Game";
+import { LanguageLayout } from "@/layouts/Language";
+import { MainMenu } from "@/pages/MainMenu";
+import { RootRedirect } from "@/routing";
+import { RouteGuard } from "@/routing";
 
 export const AppRouter: React.FC = () => {
   return (

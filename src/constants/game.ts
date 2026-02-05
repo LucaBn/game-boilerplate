@@ -1,4 +1,4 @@
-import { APP_NAME_SHORT } from "./app";
+import { APP_NAME_SHORT } from "@/constants/app";
 
 const LAST_SAVE_KEY = `${APP_NAME_SHORT}:last-save`;
 const NEXT_SAVE_ID_KEY = `${APP_NAME_SHORT}:next-save-id`;

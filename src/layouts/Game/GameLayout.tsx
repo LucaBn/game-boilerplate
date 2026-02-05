@@ -1,8 +1,9 @@
 import { AppShell } from "@mantine/core";
 
+import { Main } from "@/layouts/Game";
+import { Sidebar } from "@/layouts/Game";
+
 import styles from "./GameLayout.module.scss";
-import { Main } from "./Main";
-import { Sidebar } from "./Sidebar";
 
 export const GameLayout: React.FC = () => {
   return (

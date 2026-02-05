@@ -2,7 +2,7 @@ import { Button, Container, Stack, Title } from "@mantine/core";
 import { useNavigate, useParams } from "react-router-dom";
 
 import { APP_NAME } from "@/constants/app";
-import { useGame } from "@/hooks/useGame";
+import { useGame } from "@/hooks";
 
 import styles from "./MainMenu.module.scss";
 

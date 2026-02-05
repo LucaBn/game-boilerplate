@@ -1,6 +1,6 @@
 import { ReactNode, useEffect, useState } from "react";
 
-import { GameContext } from "@/context/GameContext";
+import { GameContext } from "@/context";
 import {
   createNewSave,
   getLastSaveId,
