@@ -1,39 +1,32 @@
 import { ReactNode, useEffect, useState } from "react";
 
 import { GameContext } from "@/context/GameContext";
+import {
+  createNewSave,
+  getLastSaveId,
+  hasAnySave as hasAnySaveStorage,
+} from "@/utils/game/gameStorage";
 
-import { LAST_SAVE_KEY, SAVES_KEY } from "../constants/game";
 interface GameProviderProps {
   children: ReactNode;
 }
 
-export const GameProvider: React.FC<GameProviderProps> = ({ children }) => {
+export function GameProvider({ children }: GameProviderProps) {
   const [activeSaveId, setActiveSaveId] = useState<string | null>(null);
   const [hasAnySave, setHasAnySave] = useState(false);
 
   useEffect(() => {
-    const raw = localStorage.getItem(SAVES_KEY);
-    const saves: string[] = raw ? JSON.parse(raw) : [];
-    setHasAnySave(saves.length > 0);
+    setHasAnySave(hasAnySaveStorage());
   }, []);
 
   function startNewGame() {
-    const id = `${crypto.randomUUID()}-${Date.now()}`;
-
-    const raw = localStorage.getItem(SAVES_KEY);
-    const saves: string[] = raw ? JSON.parse(raw) : [];
-
-    saves.push(id);
-
-    localStorage.setItem(SAVES_KEY, JSON.stringify(saves));
-    localStorage.setItem(LAST_SAVE_KEY, id);
-
-    setHasAnySave(true);
+    const id = createNewSave();
     setActiveSaveId(id);
+    setHasAnySave(true);
   }
 
   function continueLastGame() {
-    const id = localStorage.getItem(LAST_SAVE_KEY);
+    const id = getLastSaveId();
     if (id) {
       setActiveSaveId(id);
     }
@@ -52,4 +45,4 @@ export const GameProvider: React.FC<GameProviderProps> = ({ children }) => {
       {children}
     </GameContext.Provider>
   );
-};
+}
