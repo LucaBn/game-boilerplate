@@ -1,6 +1,7 @@
 import {
   Button,
   Group,
+  Image,
   Paper,
   Select,
   Title,
@@ -9,6 +10,7 @@ import {
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 
+import { APP_NAME } from "@/constants/app";
 import { ThemeList } from "@/constants/themes";
 import { LanguageList } from "@/typings/i18next";
 
@@ -31,15 +33,12 @@ export const Header = () => {
   };
 
   return (
-    <Paper
-      component="header"
-      px="md"
-      py="sm"
-      withBorder
-      className={styles.header}
-    >
+    <Paper component="header" px="md" withBorder className={styles.header}>
       <Group component="nav" className={styles.headerNav}>
-        <Title order={3}>{t("header.title")}</Title>
+        <Group>
+          <Image src="/icon.svg" alt={APP_NAME} />
+          <Title order={3}>{APP_NAME}</Title>
+        </Group>
 
         <Group>
           <Button

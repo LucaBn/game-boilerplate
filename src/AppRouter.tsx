@@ -3,7 +3,11 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import { AppLayout } from "@/layouts/App";
 import { GameLayout } from "@/layouts/Game";
 import { LanguageLayout } from "@/layouts/Language";
+import { Credits } from "@/pages/Credits";
+import { GameOverview } from "@/pages/GameOverview";
+import { LoadGame } from "@/pages/LoadGame";
 import { MainMenu } from "@/pages/MainMenu";
+import { Options } from "@/pages/Options";
 import { RootRedirect } from "@/routing";
 import { RouteGuard } from "@/routing";
 
@@ -20,13 +24,13 @@ export const AppRouter = () => {
             path="load-game"
             element={
               <RouteGuard requireAnySave>
-                <p>Load Game Page</p>
+                <LoadGame />
               </RouteGuard>
             }
           />
 
-          <Route path="options" element={<p>Options Page</p>} />
-          <Route path="credits" element={<p>Credits Page</p>} />
+          <Route path="options" element={<Options />} />
+          <Route path="credits" element={<Credits />} />
 
           <Route
             path="game"
@@ -36,7 +40,7 @@ export const AppRouter = () => {
               </RouteGuard>
             }
           >
-            <Route index element={<p>Game Overview</p>} />
+            <Route index element={<GameOverview />} />
             <Route path="link-one" element={<p>Link One Page</p>} />
             <Route path="link-two" element={<p>Link Two Page</p>} />
           </Route>
