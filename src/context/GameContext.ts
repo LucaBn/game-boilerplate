@@ -4,7 +4,6 @@ export interface GameState {
   hasAnySave: boolean;
   gameStarted: boolean;
   activeSaveId: string | null;
-
   startNewGame: () => void;
   continueLastGame: () => void;
 }

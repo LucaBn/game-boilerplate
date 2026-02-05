@@ -18,7 +18,7 @@ export const GameProvider: React.FC<GameProviderProps> = ({ children }) => {
   }, []);
 
   function startNewGame() {
-    const id = crypto.randomUUID();
+    const id = `${crypto.randomUUID()}-${Date.now()}`;
 
     const raw = localStorage.getItem(SAVES_KEY);
     const saves: string[] = raw ? JSON.parse(raw) : [];
