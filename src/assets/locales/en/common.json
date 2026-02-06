@@ -2,6 +2,7 @@
   "general": {
     "toggleColorTheme": "Toggle theme color",
     "toggleLanguage": "Toggle language",
+    "toggleNavbar": "Toggle navbar",
     "language": {
       "en": "English",
       "it": "Italiano"

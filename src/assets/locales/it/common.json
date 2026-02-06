@@ -2,6 +2,7 @@
   "general": {
     "toggleColorTheme": "Cambia tema",
     "toggleLanguage": "Cambia lingua",
+    "toggleNavbar": "Attiva/disattiva barra di navigazione",
     "language": {
       "en": "English",
       "it": "Italiano"
