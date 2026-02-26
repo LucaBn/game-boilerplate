@@ -1,5 +1,5 @@
-import { Box, NavLink as MantineNavLink, Stack } from "@mantine/core";
 import { NavLink } from "react-router-dom";
+import { Box, NavLink as MantineNavLink, Stack } from "@mantine/core";
 
 import styles from "./Sidebar.module.scss";
 

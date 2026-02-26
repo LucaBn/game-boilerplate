@@ -1,6 +1,6 @@
-import { Button, Container, Stack, Title } from "@mantine/core";
 import { useTranslation } from "react-i18next";
 import { useNavigate, useParams } from "react-router-dom";
+import { Button, Container, Stack, Title } from "@mantine/core";
 
 import { APP_NAME } from "@/constants/app";
 import { useGame } from "@/hooks";

@@ -1,5 +1,5 @@
-import { Box } from "@mantine/core";
 import { Outlet } from "react-router-dom";
+import { Box } from "@mantine/core";
 
 import styles from "./Main.module.scss";
 

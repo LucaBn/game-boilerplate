@@ -1,5 +1,5 @@
-import { AppShell, Container } from "@mantine/core";
 import { Outlet } from "react-router-dom";
+import { AppShell, Container } from "@mantine/core";
 
 import { Header } from "@/layouts/App";
 

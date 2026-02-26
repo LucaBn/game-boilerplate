@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 import {
   Burger,
   Button,
@@ -11,8 +13,6 @@ import {
   useMantineColorScheme,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
-import { useTranslation } from "react-i18next";
-import { useNavigate } from "react-router-dom";
 
 import { APP_NAME } from "@/constants/app";
 import { ThemeList } from "@/constants/themes";
