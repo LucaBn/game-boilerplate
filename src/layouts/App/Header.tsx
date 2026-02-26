@@ -81,7 +81,6 @@ export const Header = () => {
           <Image src="/icon.svg" alt={APP_NAME} />
           <Title order={3}>{APP_NAME}</Title>
         </Group>
-
         <Group visibleFrom="sm">
           <NavbarButtons />
         </Group>
