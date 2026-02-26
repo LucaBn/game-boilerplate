@@ -69,7 +69,14 @@ export const Header = () => {
 
   return (
     <Paper component="header" px="md" withBorder className={styles.header}>
-      <Group component="nav" className={styles.headerNav}>
+      <Group
+        component="nav"
+        justify="space-between"
+        align="center"
+        wrap="nowrap"
+        h="100%"
+        w="100%"
+      >
         <Group>
           <Image src="/icon.svg" alt={APP_NAME} />
           <Title order={3}>{APP_NAME}</Title>

@@ -8,13 +8,6 @@
   right: 0;
   z-index: 200;
   height: $header-height;
-
-  &Nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
 }
 
 .languageSelect {
