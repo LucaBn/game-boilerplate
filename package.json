@@ -7,16 +7,14 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "licenses": "license-checker --markdown > THIRD_PARTY_LICENSES.md"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@mantine/core": "^7.17.0",
     "@mantine/hooks": "^7.17.0",
-    "@mantine/notifications": "^7.17.0",
-    "@mui/material": "^5.16.7",
-    "@mui/x-charts": "^7.3.1",
     "i18next": "^23.16.4",
     "i18next-browser-languagedetector": "^7.2.1",
     "idb": "^8.0.3",
@@ -36,6 +34,7 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.26",
     "eslint-plugin-simple-import-sort": "^12.1.1",
+    "license-checker": "^25.0.1",
     "sass": "^1.89.2",
     "typescript": "^5.7.3",
     "vite": "^7.1.12"

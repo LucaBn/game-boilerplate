@@ -10,8 +10,7 @@ This project uses a modern, performance-oriented stack:
 - **TypeScript**
 - **Vite**
 - **React Router**
-- **Mantine** (UI components)
-- **MUI (Material UI + Charts)**
+- **Mantine** (UI)
 - **Emotion** (CSS-in-JS)
 - **i18next & react-i18next** (internationalization)
 - **Sass** (optional styling)
@@ -22,6 +21,7 @@ This project uses a modern, performance-oriented stack:
 - Component-based UI ready for game interfaces
 - Multilingual support with automatic language detection
 - Client-side routing for seamless navigation
+- Local data persistence (IndexedDB)
 - Ready-to-extend foundation for strategy, management, or RPG games
 
 ## Getting Started
@@ -72,4 +72,6 @@ Contributions are welcome! Submit pull requests to add features, fix bugs, or im
 
 ## License
 
-This project is open source and licensed under the MIT License.
+This project is open source and available under the [MIT License](LICENSE).
+
+Third-party libraries used in this project are subject to their own licenses, which can be found in [THIRD_PARTY_LICENSES.md](THIRD_PARTY_LICENSES.md).
